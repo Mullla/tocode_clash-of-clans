@@ -12,5 +12,5 @@ export const LINKS = [
 ];
 
 export const app = {
-  title: 'Template'
+  title: 'Clash of Clans'
 }
