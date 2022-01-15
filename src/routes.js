@@ -25,8 +25,13 @@ const routes = createRouter({
       component: ItemPage
     },
     {
-      path: '/:CatchAll(.*)',
+      path: '/404',
       name: '404',
+      component: NotFoundPage
+    },
+    {
+      path: '/:CatchAll(.*)',
+      name: 'NotFound',
       component: NotFoundPage
     }
   ],

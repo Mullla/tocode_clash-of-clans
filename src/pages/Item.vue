@@ -31,6 +31,16 @@ export default {
     const item = items.find((el) => el.alias === alias);
     this.item = item;
   },
+
+  beforeRouteEnter(to, from, next) {
+    const itemAlias = to.params.itemAlias;
+
+    if (items.find((el) => el.alias === itemAlias)) {
+      next();
+    } else {
+      next("/404");
+    }
+  },
 };
 </script>
 
