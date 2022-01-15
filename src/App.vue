@@ -1,10 +1,13 @@
 <template lang="pug">
 .wrapper
-  <the-header />
-    .wrapper-content
-      .container
+  TheHeader
+  
+  .wrapper-content
+    .container
+      .view-sm.isCenter
         <router-view />
-  <the-footer />
+
+  TheFooter
 </template>
 
 <script>
